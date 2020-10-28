@@ -8,9 +8,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-@Component
-public class CustomHealthIndicator implements HealthIndicator {
-
+//@Component
+public class CustomHealthIndicator{// implements HealthIndicator {
+/*
     private boolean isHealthy = false;
 
     public CustomHealthIndicator() {
@@ -24,5 +24,5 @@ public class CustomHealthIndicator implements HealthIndicator {
     @Override
     public Health health() {
         return isHealthy ? Health.up().build() : Health.down().build();
-    }
+    }*/
 }

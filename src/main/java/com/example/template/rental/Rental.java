@@ -51,6 +51,12 @@ public class Rental {
             throw new RuntimeException();
         }
 
+        try {
+            Thread.sleep((long) (800 + Math.random() * 300));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         int price = 0;
         String productName = null;
 
@@ -74,12 +80,6 @@ public class Rental {
      */
     @PostPersist
     private void onPostPersist() throws Exception {
-
-        try {
-            Thread.sleep((long) (800 + Math.random() * 300));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         RestTemplate restTemplate = Application.applicationContext.getBean(RestTemplate.class);
         Environment env = Application.applicationContext.getEnvironment();

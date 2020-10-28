@@ -1,8 +1,8 @@
 
 api:
   url:
-    delivery: http://10.0.47.131:8080
-    book: http://10.0.47.131:8080
+    delivery: http://10.0.209.31:8080
+    book: http://10.0.110.157:8080
 
 spring:
   profiles: docker
@@ -19,7 +19,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 10.0.21.169:9092
+          brokers: 10.0.108.75:9092
         streams:
           binder:
             configuration:

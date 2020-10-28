@@ -72,7 +72,15 @@ api:
     delivery: http://localhost:8083
     book: http://localhost:8081
 
-#feign:
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 680
+
+      #feign:
     #  client:
       #config:
       #feignName: # @FeignClient에서 name 값, 전역으로 설정하려면 default

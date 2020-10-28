@@ -29,8 +29,6 @@ public class RentalController {
         return this.rentalService.save(data);
     }
 
-    @Value("${superuser}")
-    String superUserId;
 
     @Autowired
     Environment env;
@@ -41,6 +39,6 @@ public class RentalController {
     String getEnvSample() {
         System.out.println(" @Value = " + "skykyw");
 
-        return superUserId;
+        return "skykyw";
     }
 }
